@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Formulário de contato</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <div id="loader-overlay" class="d-none">
+      <div class="loader"></div>
+    </div>
+    <form class="form-contato" onsubmit="handleFormSubmit(event)">
+      <h1>Entre em contato</h1>
+
+      <div class="inline-area">
+        <div class="input-area">
+          <label for="nome" title="Nome">Nome:</label>
+          <input
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome"
+            name="nome"
+            autofocus
+            title="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="input-area">
+          <label for="email" title="E-mail">E-mail:</label>
+          <input
+            type="email"
+            placeholder="Digite seu e-mail"
+            id="email"
+            name="email"
+            title="Digite seu e-mail"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-area">
+        <label for="endereco" title="endereco">Endereço</label>
+        <input
+          type="text"
+          placeholder="Digite seu endereço"
+          id="endereco"
+          name="endereco"
+          title="Digite seu endereço"
+          required
+        />
+      </div>
+      <div class="input-area">
+        <label for="mensagem" title="Mensagem">Mensagem:</label>
+        <textarea
+          rows="4"
+          placeholder="Digite sua mensagem"
+          id="mensagem"
+          name="mensagem"
+          title="Digite sua Mensagem"
+          required
+        ></textarea
+        >
+      </div>
+      <ul id="message-area"></ul>
+      <div class="button-area">
+        <button type="reset" class="btn" title="Limpar Formulário">
+          Limpar
+        </button>
+        <button type="submit" class="btn btn-submit" title="Enviar Formulário">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
